@@ -105,7 +105,7 @@ function displayBooks() {
       <p>Read: ${book.read ? "Yes" : "No"}</p>
       <p>Genre: ${book.genre}</p>`;
 
-    if (book.read == false) {
+    if (book.read != false) {
       bookCard.classList.add("read");
       bookCard.classList.remove("unread");
     }
