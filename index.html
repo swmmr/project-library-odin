@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Library</title>
 </head>
 <body>
-    hello
+    <div class="container">
+        <h1>Library</h1>
+        <h1></h1>
+        <div class="book-container" id="libraryContainer">
+
+        </div>
+        <form action="#" method="post" id="form-input">
+            <div>
+                <label for="title">Book Title</label>
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  placeholder="Enter the book title"
+                  required
+                />
+              </div>
+    
+              <div>
+                <label for="author">Author</label>
+                <input
+                  type="text"
+                  id="author"
+                  name="author"
+                  placeholder="Enter the author's name"
+                  required
+                />
+              </div>
+    
+              <div>
+                <label for="pages">Number of Pages</label>
+                <input
+                  type="number"
+                  id="pages"
+                  name="pages"
+                  min="1"
+                  placeholder="Enter the number of pages"
+                  required
+                />
+              </div>
+    
+              <div>
+                <label for="read">Have you read it?</label>
+                <select id="read" name="read" required>
+                  <option value="true">Yes</option>
+                  <option value="false">No</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="genre">Genre</label>
+                <input
+                  type="text"
+                  id="genre"
+                  name="genre"
+                  placeholder="Enter the genre"
+                  required
+                />
+              </div>
+    
+              <div>
+                <button type="submit">Add Book</button>
+              </div>
+        </form>
+      </div>
+      <script src="script.js"></script>
 </body>
 </html>
