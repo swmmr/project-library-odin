@@ -79,3 +79,11 @@ button {
     margin-top: 20px;
     border-radius: 1.1rem;   
 }
+
+.read {
+    box-shadow: 0 0 10px green;
+}
+
+.unread {
+    box-shadow: 0 0 10px red;
+}
